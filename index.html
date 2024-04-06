@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module" defer></script>
+    <title>Proyecto JS</title>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!--CABECERA-->
+        <header class="header">
+            <div class="logo">
+                <div class="play"></div>
+            </div>
+            <h1>Mis Películas</h1>
+        </header>
+
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav class="nav">
+            <ul>
+                <li> <a href="#">Inicio</a></li>
+                <li> <a href="#">Películas</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <!--CONTENIDO PRINCIPAL-->
+        <section id="content" class="content">
+            <!--aquí irán las películas-->
+            <article class="peli-item">
+                <h3 class="title">Desarrollo Web</h3>
+                <p class="description"> Soy una película </p>
+
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+            </article>
+        </section>
+
+        <!--BARRA LATERAL-->
+        <aside class="lateral">
+            <div class="search">
+                <h3 class="title">Buscador</h3>
+                <form action="">
+                    <input type="text" />
+                    <button>Buscar</button>
+                </form>
+            </div>
+
+            <div class="add">
+                <h3 class="title"> Añadir pelicula</h3>
+                <form action="">
+                    <input type="text" id="title" placeholder="Titulo" />
+                    <textarea id="description" placeholder="Descripción"></textarea>
+                    <input type="submit" id="save" value="Guardar" />
+                </form>
+            </div>
+        </aside>
+
+        <!--PIE DE PÁGINA-->
+        <footer class="footer">
+            &copy; Máster en JavaScript ES12 y TypeScript
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
